@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>LAZHAR ADOLA | الموقع الشخصي</title>
+  <style>
+    :root {
+      --bg: #080b14;
+      --panel: #101625;
+      --panel2: #0c1220;
+      --text: #f4f7ff;
+      --muted: #a6b0c5;
+      --blue: #68a8ff;
+      --cyan: #68e0e8;
+      --line: rgba(160,185,230,.15);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      text-align: right;
+      margin: 0; color: var(--text);
+      background: radial-gradient(ellipse at 80% 0%, rgba(48,104,190,.18), transparent 36%), var(--bg);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1060px, 90%); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:800; letter-spacing:1.5px; font-size:15px; }
+    .brand span { color:var(--blue); }
+    .navlinks { display:flex; gap:22px; color:var(--muted); font-size:13px; }
+    .navlinks a:hover { color:var(--text); }
+    .hero { min-height: 570px; display:flex; align-items:center; padding:80px 0 70px; }
+    .eyebrow { color:var(--cyan); text-transform:uppercase; letter-spacing:3px; font-size:11px; font-weight:bold; }
+    h1 { font-size:clamp(42px, 8vw, 76px); line-height:1.05; letter-spacing:-2px; margin:18px 0; }
+    h1 span { color:var(--blue); }
+    .intro { max-width:590px; color:var(--muted); font-size:17px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-block; padding:12px 20px; border-radius:9px; font-weight:bold; font-size:13px; border:1px solid var(--line); }
+    .primary { color:#07101e; background:linear-gradient(110deg,var(--blue),var(--cyan)); border:0; }
+    .secondary { background:rgba(255,255,255,.03); }
+    section { padding:62px 0; }
+    .section-title { font-size:28px; margin:0 0 8px; letter-spacing:-.5px; }
+    .section-sub { color:var(--muted); margin:0 0 26px; font-size:14px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:linear-gradient(145deg,rgba(20,30,50,.92),rgba(12,18,32,.92)); border:1px solid var(--line); border-radius:15px; padding:23px; }
+    .card .symbol { color:var(--cyan); font-size:22px; }
+    .card h3 { margin:12px 0 6px; font-size:17px; }
+    .card p { color:var(--muted); margin:0; font-size:13px; }
+    .project { min-height:150px; display:flex; flex-direction:column; justify-content:space-between; }
+    .tag { color:var(--cyan); font-size:11px; letter-spacing:1px; text-transform:uppercase; }
+    .contact { background:linear-gradient(130deg,rgba(32,75,130,.22),rgba(15,25,43,.7)); border:1px solid var(--line); border-radius:18px; padding:32px; }
+    footer { padding:25px 0; color:var(--muted); border-top:1px solid var(--line); font-size:12px; }
+    .foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    @media(max-width:700px) {
+      .navlinks { gap:12px; font-size:11px; }
+      .hero { min-height:480px; padding:65px 0; }
+      .grid { grid-template-columns:1fr; }
+      section { padding:45px 0; }
+    }
+    @media(max-width:420px) {
+      nav { align-items:flex-start; flex-direction:column; }
+      .navlinks { flex-wrap:wrap; }
+      .intro { font-size:15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="القائمة الرئيسية">
+        <a class="brand" href="#home">LAZHAR<span>.</span></a>
+        <div class="navlinks">
+          <a href="#about">من أنا</a>
+          <a href="#interests">اهتماماتي</a>
+          <a href="#projects">مشاريعي</a>
+          <a href="#contact">تواصل</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">مرحباً بك في موقعي الشخصي</div>
+        <h1>أهلاً، أنا<br><span>LAZHAR ADOLA</span></h1>
+        <p class="intro">هذه مساحتي الرقمية الخاصة، أشارك فيها ما أتعلمه وأستكشف أفكاراً جديدة وأعرض مشاريعي وتجربتي في عالم التقنية والإبداع.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">اكتشف مشاريعي</a>
+          <a class="btn secondary" href="#about">تعرّف عليّ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">نبذة قصيرة</div>
+        <h2 class="section-title">من أنا؟</h2>
+        <p class="section-sub">مساحة للأفكار والتعلّم والإبداع.</p>
+        <div class="card">
+          <p style="margin:0;color:var(--muted)">أنا لزهر الدولة، أحب اكتشاف عالم التكنولوجيا والحاسوب، وتعلّم مهارات جديدة وتجربة الأفكار وتحويلها إلى مشاريع حقيقية. أنشأت هذا الموقع ليكون نافذتي على الإنترنت ومكاناً أشارك فيه رحلتي وتطوري.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="wrap">
+        <div class="eyebrow">ما أحب اكتشافه</div>
+        <h2 class="section-title">اهتماماتي</h2>
+        <p class="section-sub">مجالات أتعلم عنها وأطوّر مهاراتي فيها.</p>
+        <div class="grid">
+          <article class="card"><div class="symbol">⌘</div><h3>التكنولوجيا</h3><p>اكتشاف الحواسيب والبرامج والأدوات الرقمية.</p></article>
+          <article class="card"><div class="symbol">◇</div><h3>الإبداع والتصميم</h3><p>تجربة التصاميم وصناعة محتوى وأفكار جديدة.</p></article>
+          <article class="card"><div class="symbol">↗</div><h3>التعلّم</h3><p>اكتساب المعرفة وتطوير النفس خطوة بعد خطوة.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="eyebrow">ماذا أصنع؟</div>
+        <h2 class="section-title">مشاريعي</h2>
+        <p class="section-sub">ستظهر هنا مشاريعي الجديدة عندما أنتهي منها.</p>
+        <div class="grid">
+          <article class="card project"><div><div class="tag">المشروع 01</div><h3>قريباً</h3><p>مشروع جديد قيد التحضير.</p></div></article>
+          <article class="card project"><div><div class="tag">المشروع 02</div><h3>قريباً</h3><p>فكرة جديدة سترى النور قريباً.</p></div></article>
+          <article class="card project"><div><div class="tag">المشروع 03</div><h3>قريباً</h3><p>المزيد من الأعمال في الطريق.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="eyebrow">إلى اللقاء</div>
+          <h2 class="section-title">شكراً لزيارتك!</h2>
+          <p class="section-sub" style="margin-bottom:0">يسعدني أنك زرت موقعي. ترقّبوا المزيد من التحديثات والمشاريع قريباً.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="year">2026</span> LAZHAR ADOLA. جميع الحقوق محفوظة</span>
+      <span>صُنع بشغف وحبّ التعلّم.</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
